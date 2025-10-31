@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <div id="greeting"></div>
+    <div id="clock"></div>
+    <div id="date"></div>
+  </div>
+
+  <div class="todo-container">
+    <h2>🎓 Student To-Do List</h2>
+
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter your task..." />
+      <input type="time" id="reminderTime" />
+      <button id="addBtn">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <div id="quote" class="quote"></div>
+
+  <div id="reward" class="reward hidden">
+    🎉 Great Job! Task Completed! 🎉
+  </div>
+
+  <!-- Audio -->
+  <audio id="reminderSound" src="https://www.soundjay.com/buttons/sounds/beep-07.mp3" preload="auto"></audio>
+  <audio id="rewardSound" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" preload="auto"></audio>
+
+  <!-- Confetti canvas -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
